@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive visual notes and experiments for complexity science." />
+  <title>Complexity Visual Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Lab navigation">
+      <a class="brand" href="#/">
+        <span class="brand-mark">CV</span>
+        <span>
+          <strong>Complexity Visual Lab</strong>
+          <small>Interactive reading notes</small>
+        </span>
+      </a>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot">
+        Inspired by <em>Complexity: A Guided Tour</em>.
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="mobile-header">
+        <a class="mobile-brand" href="#/">Complexity Visual Lab</a>
+        <button id="menuButton" class="menu-button" type="button" aria-label="Toggle navigation">☰</button>
+      </header>
+      <div id="app" class="page" aria-live="polite"></div>
+    </main>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
